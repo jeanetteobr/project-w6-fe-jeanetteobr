@@ -4,8 +4,12 @@ body {
   font-family: sans-serif;
 }
 
+img {
+  width: 25%;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -15,7 +19,7 @@ body {
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
 }

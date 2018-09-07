@@ -1,23 +1,32 @@
 import React, { Component } from 'react'
-import books from './books.json'
+import request from 'superagent'
 import './App.css'
+import BookListView from './BookListView'
 
 class App extends Component {
   constructor () {
     super()
-    this.books = books
+    this.state = {
+      books: []
+    }
+  }
+  componentDidMount () {
+    request.get('http://localhost:4000/books')
+      .then((res) => {
+        this.setState({
+          books: res.body
+        })
+      })
   }
   render () {
     return (
       <div className='App'>
         <header className='App-header'>
-          <h1 className='App-title'>Freeshelf</h1>
+          <h1 className='App-title'>Freeshelf App</h1>
         </header>
-        <div className='book-container'>{this.books.map((b, idx) => {
-          return (
-            <div className='book-title' key={idx}><h1>{b.title}</h1></div>
-          )
-        })}</div>
+        <div className='book-container'>
+          {(this.state.books.map((books, idx) => <BookListView key={idx} books={books} />))}
+        </div>
       </div>
     )
   }

@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className='App'>
         <header className='App-header'>
-          <h1 className='App-title'>Freeshelf App</h1>
+          <p className='App-title'>Freeshelf App</p>
         </header>
         <div className='book-container'>
           {(this.state.books.map((books, idx) => <BookListView key={idx} books={books} />))}

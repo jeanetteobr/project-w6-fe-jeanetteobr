@@ -5,11 +5,12 @@ body {
 }
 
 img {
-  width: 25%;
+  width: 150px;
 }
 
-.App {
+p {
   text-align: left;
+  font-size: 12px;
 }
 
 .App-logo {
@@ -22,14 +23,39 @@ img {
   height: 100px;
   padding: 20px;
   color: white;
+  text-align: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  text-align: center;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.book-cover-img {
+  padding-left: 150px;
+}
+.book-container {
+  padding-top: 25px;
+}
+
+.book-info{
+  padding-left: 25px;
+}
+
+.book-result {
+  padding-bottom: 25px;
+}
+
+.book-title {
+  font-weight: bold;
+}
+.button {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
 }
 
 @keyframes App-logo-spin {

@@ -44,7 +44,7 @@
     "author": "Daniel Higgenbotham",
     "url": "https://www.braveclojure.com/clojure-for-the-brave-and-true/",
     "shortDescription": "In Clojure for the Brave and True, you'll learn to wield this awesome language to its fullest!",
-    "coverImageUrl": "http://nostarch.com/sites/default/files/styles/uc_product/public/clojure_cover-front_final.png",
+    "coverImageUrl": "",
     "publisher": "No Starch Press",
     "publicationDate": "2015",
     "detailedDescription": "For weeks, months—nay!—from the very moment you were born, you’ve felt it calling to you. At long last you'll be united with the programming language you've been longing for: Clojure! Clojure’s popularity continues to grow, with companies like Netflix using it to build everything from complex, distributed systems to simple microservices to user interfaces. In Clojure for the Brave and True, you'll learn to wield this awesome language to its fullest!"
@@ -74,7 +74,7 @@
     "author": "Harold Abelson, Gerald Jay Sussman, and Julie Sussman",
     "url": "https://mitpress.mit.edu/sicp/",
     "shortDescription": "Wizard Book n. Hal Abelson's, Jerry Sussman's and Julie Sussman's Structure and Interpretation of Computer Programs (MIT Press, 1984; ISBN 0-262-01077-1), an excellent computer science text used in introductory courses at MIT. So called because of the wizard on the jacket. One of the bibles of the LISP/Scheme world. Also, less commonly, known as the Purple Book.",
-    "coverImageUrl": "https://mitpress.mit.edu/sites/default/files/imagecache/booklist_node/9780262510875.jpg",
+    "coverImageUrl": "",
     "publisher": "The MIT Press",
     "publicationDate": "1984",
     "detailedDescription": "Structure and Interpretation of Computer Programs has had a dramatic impact on computer science curricula over the past decade. This long-awaited revision contains changes throughout the text. There are new implementations of most of the major programming systems in the book, including the interpreters and compilers, and the authors have incorporated many small changes that reflect their experience teaching the course at MIT since the first edition was published. A new theme has been introduced that emphasizes the central role played by different approaches to dealing with time in computational models: objects with state, concurrent programming, functional programming and lazy evaluation, and nondeterministic programming. There are new example sections on higher-order procedures in graphics and on applications of stream processing in numerical programming, and many new exercises. In addition, all the programs have been reworked to run in any Scheme implementation that adheres to the IEEE standard."

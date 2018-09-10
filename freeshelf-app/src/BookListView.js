@@ -60,7 +60,7 @@ class BookListView extends Component {
         <div className='book-cover-img'>{img}</div>
         <div className='book-info column is-5'>
           <h3 id='title' className='book-title is-title'>{books.title}</h3>
-          <p><i>{books.author}</i> </p>
+          <p><i><span style={{color: '#808080'}}>{books.author}</span></i> </p>
           <p>{books.shortDescription}</p>
           {moreInfo}
           {editBook}

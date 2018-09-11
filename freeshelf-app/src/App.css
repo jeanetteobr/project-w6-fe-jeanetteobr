@@ -8,6 +8,9 @@ img {
   width: 150px;
 }
 
+input {
+  margin-bottom: 20px;
+}
 p {
   text-align: left;
   font-size: 14px;
@@ -35,15 +38,19 @@ p {
   font-size: large;
 }
 
-.book-cover-img {
-  padding-left: 150px;
-}
 .book-container {
-  padding-top: 25px;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  max-width: 75%;
+}
+
+.input{
+  margin-bottom: 10px;
 }
 
 .book-info{
-  padding-left: 25px;
+  margin-left: 25px;
 }
 
 .book-result {

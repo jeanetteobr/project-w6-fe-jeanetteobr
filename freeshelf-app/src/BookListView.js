@@ -6,8 +6,7 @@ class BookListView extends Component {
   constructor (props) {
     super()
     this.state = {
-      showMore: false,
-      isEditing: false
+      showMore: false
     }
   }
   showMore (books) {
@@ -32,16 +31,10 @@ class BookListView extends Component {
       )
     }
   }
-  editBookResult (books, title) {
-    // this.setState({title: this.props.books.title})
-  }
   render () {
     const { books } = this.props
-    const { id } = this.props
-
     let moreInfo
     let img = this.showPlaceholderImg(books)
-    let editBook
 
     if (this.state.showMore) {
       moreInfo = this.showMore(books)
@@ -49,21 +42,15 @@ class BookListView extends Component {
       moreInfo = <button className='button is-primary is-small' onClick={() => this.setState({showMore: true})}>Show more info</button>
     }
 
-    if (this.state.isEditing) {
-      editBook = this.editBookResult(books, id)
-    } else {
-      editBook = <div><button className='button is-primary is-small' onClick={() => this.setState({isEditing: true})}>Edit book</button></div>
-    }
-
     return (
       <div className='book-result columns'>
         <div className='book-cover-img'>{img}</div>
-        <div className='book-info column is-5'>
+        <div className='book-info column is-8'>
           <h3 id='title' className='book-title is-title'>{books.title}</h3>
           <p><i><span style={{color: '#808080'}}>{books.author}</span></i> </p>
           <p>{books.shortDescription}</p>
           {moreInfo}
-          {editBook}
+          <div><button className='button is-primary is-small' onClick={() => { this.props.editBook(books) }}>Edit book</button></div>
         </div>
       </div>
 
